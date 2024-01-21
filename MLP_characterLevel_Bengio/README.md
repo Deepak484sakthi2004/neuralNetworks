@@ -7,6 +7,15 @@ This project implements character-level  Multilayer Perceptrons (MLPs) inspired 
 ### Character Level MLP
 
 For character-level prediction, a 2D embedding approach is used .
+```
+aaban
+... ---> a
+..a ---> a
+.aa ---> b
+aab ---> a
+aba ---> n
+ban ---> .
+```
 
 ### Word Level MLP
 
