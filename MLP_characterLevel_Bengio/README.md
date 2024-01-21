@@ -53,7 +53,8 @@ of krishnadwaipayana vyasa ---> book
 krishnadwaipayana vyasa book ---> adi
 vyasa book adi ---> parva
 ```
-## Neural architecture: f(i,wt−1, ··· ,wt−n+1)= g(i,C(wt−1), ··· ,C(wt−n+1))
+## Neural architecture
+![nn architecture](_extensions/img/NN_architecture.png)
 
 ## References
 
