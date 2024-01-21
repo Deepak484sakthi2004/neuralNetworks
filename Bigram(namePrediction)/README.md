@@ -19,7 +19,7 @@ The repository includes a compact 2K parameter transformer as the default model 
 ### Probability Matrix Approach
 
 The B-I-G-R-A-M model is implemented using a probability matrix for each character. This approach involves calculating the probability distribution of characters based on the dataset, providing a foundation for generating new names.
-![probabilitiy distribution](_extensions/img/probDist.png)
+![probabilitiy distribution](/_extensions/probDist.png)
  
  **Note:** 
 -  Model smoothing is a hyperparamter, that can be used for better results#1
@@ -32,8 +32,9 @@ Feel free to explore both implementations and choose the one that best suits you
 
  **Note:** 
 -  The weighs and biases are set at random in first, it is to avoid the uniform probability distribution of the logits on backpropagating
--  + 0.01*(W**2).mean() is a gravity, that is only to avoid the uniform distribution. It reduces the likelyhood of unwanted probabilties.
- The regularization term 0.01*(W**2).mean() in the loss function helps prevent overfitting by penalizing large values in the weight tensor W. The learning rate -50 in the weight update determines the step size in the direction opposite to the gradient.
+-  0.01*(W**2).mean() is a gravity, that is only to avoid the uniform distribution. It reduces the likelyhood of unwanted probabilties.
+
+The regularization term 0.01*(W**2).mean() in the loss function helps prevent overfitting by penalizing large values in the weight tensor W. The learning rate -50 in the weight update determines the step size in the direction opposite to the gradient.
 
 ```python
   # gradient descent
