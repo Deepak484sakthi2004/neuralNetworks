@@ -20,7 +20,7 @@ The repository includes a compact 2K parameter transformer as the default model 
 
 The B-I-G-R-A-M model is implemented using a probability matrix for each character. This approach involves calculating the probability distribution of characters based on the dataset, providing a foundation for generating new names.
 
-![Probability Distribution](/_extensions/img/heatMap.png)
+![Probability Distribution](_extensions/img/probDist.svg)
 
  **Note:** 
 -  Model smoothing is a hyperparamter, that can be used for better results 
