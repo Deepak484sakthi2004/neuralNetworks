@@ -1,30 +1,27 @@
 # gradDescentor - Neural Network from Scratch
 
-This project implements a simple neural network from scratch without relying on external deep learning libraries such as PyTorch or TensorFlow. The neural network is defined within a Python class named NeuralNetwork, allowing users to understand the fundamental concepts of building and training neural networks.
+Welcome to gradDescentor, a minimalist neural network implementation from scratch. This project introduces a compact Autograd engine and a concise neural networks library, showcasing the essentials of building and training neural networks without relying on external deep learning libraries.
 
 ## Features
 
-- Custom Implementation: No external deep learning libraries are used; the neural network is coded from scratch.
-- Backpropagation: The project demonstrates the backpropagation algorithm for training the neural network.
-- Gradient Descent: The neural network utilizes gradient descent to optimize weights during training.
-- Predictions: Once trained, the model can make predictions on new data by forward-passing through the network.
+- **Neural Networks Library:** A compact library (50 lines) offering a PyTorch-like API for constructing and training neural networks.
+- **Custom Implementation:** Build neural networks from the ground up, gaining a deep understanding of the core concepts.
+- **Custom Implementation:** Build neural networks from scratch without external deep learning libraries.
+- **Backpropagation:** Illustrates the backpropagation algorithm for training the neural network.
+- **Gradient Descent:** Utilizes gradient descent to optimize weights during training.
+- **Predictions:** Once trained, the model can make predictions on new data through forward-passing.
 
 ## Getting Started
 
-- Object Creation: Instantiate the Value class to create an object capable of performing various mathematical operations.
+# Example Usage
+a = Value(-12.0)
+b = Value(8.0)
+c = a + b
+# ... (other operations)
+g += 9.0 / f
+print(f'{g.data:.4f}')  # prints the outcome of this forward pass
+g.backward()
+print(f'{a.grad:.4f}')  # prints the numerical value of dg/da
+print(f'{b.grad:.4f}')  # prints the numerical value of dg/db
 
-- Basic Operations:
-  - add(x): Addition operation.
-  - multiply(x): Multiplication operation.
-  - subtract(x): Subtraction operation.
-  - exponent(x): Exponential operation.
-  - tanh(x)    : Sigmoid operation.
 
-- Gradient Chain Rule:
-  - The Value object incorporates the chain rule of derivatives to compute gradients efficiently.
-
-- Visualize Neural Network:
-  - Utilize the draw_dot function to visualize the neural network structure .
-
-- Backpropagation:
-  - The Value class includes a backpropagation function for training the neural network.
