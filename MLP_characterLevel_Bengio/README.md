@@ -66,5 +66,31 @@ vyasa book adi ---> parva
 ![nn architecture](_extensions/img/NN_architecture.png)
 
 ## References
+ [Bengio et al. 2003](https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf) research paper is  inspired in this project.
 
-- Mention the Bengio research paper that inspired this project.
+
+
+## Explanation : Character Level MLP
+
+For the character-level MLP, the goal is to predict the next character in a sequence of baby names. The process involves:
+
+1. Character Encoding:
+   - Assign key-value pairs to each character from a to z, mapping them to integers (1 to 26).
+   - Include a special index (0) indicating the end of a word or sentence.
+
+2. Data Preparation:
+   - Import Torch and convert baby names into tensors using a StringToInt dictionary(stoi).
+   - One-hot encode the tensor matrices for input (X) and output (Y).
+
+3. Model Architecture:
+   - Initialize an embedding matrix (C) with random values.
+   - Use W1 and B1 matrices to process the input through a tanh activation function in the second layer.
+   - Apply softmax embedding in the third layer to convert the output into a probability distribution.
+
+4. Training:
+   - Assign random values to the embedding matrix (C).
+   - Train the model to optimize the parameters for predicting the next character.
+
+This character-level MLP aims to capture patterns in baby names and predict the probability of the next character in the sequence.
+
+ 
