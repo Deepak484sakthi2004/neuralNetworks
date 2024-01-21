@@ -19,10 +19,11 @@ The repository includes a compact 2K parameter transformer as the default model 
 ### Probability Matrix Approach
 
 The B-I-G-R-A-M model is implemented using a probability matrix for each character. This approach involves calculating the probability distribution of characters based on the dataset, providing a foundation for generating new names.
-![probabilitiy distribution](/_extensions/probDist.png)
- 
+
+![Probability Distribution](Bigram(namePrediction)/_extensions/probDist.svg)
+
  **Note:** 
--  Model smoothing is a hyperparamter, that can be used for better results#1
+-  Model smoothing is a hyperparamter, that can be used for better results 
 
 ### Neural Network Approach
 
