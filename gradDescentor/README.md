@@ -14,14 +14,14 @@ Welcome to gradDescentor, a minimalist neural network implementation from scratc
 ## Getting Started
 
 # Example Usage
+```python
 a = Value(-12.0)
 b = Value(8.0)
 c = a + b
-# ... (other operations)
 g += 9.0 / f
 print(f'{g.data:.4f}')  # prints the outcome of this forward pass
 g.backward()
 print(f'{a.grad:.4f}')  # prints the numerical value of dg/da
 print(f'{b.grad:.4f}')  # prints the numerical value of dg/db
-
+```
 
