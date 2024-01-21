@@ -38,5 +38,5 @@ d = c.tanh()
 # Visualize the graph
 draw_dot(d)
 ```
-![neuron](network.svg)
+![neuron](_extensions/img/network.svg)
 
