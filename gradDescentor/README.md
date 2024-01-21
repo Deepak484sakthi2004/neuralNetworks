@@ -28,9 +28,8 @@ print(f'{b.grad:.4f}')  # prints the numerical value of dg/db
 ## Tracing / Visualization
 
  trace_graph method provides convenient graphviz visualizations. For example, the code snippet below generates a visualization of a simple 2D neuron. The resulting graph, obtained by calling draw_dot, displays both the data (left number in each node) and the gradient (right number in each node).
- '''python
+```python
 
-# Example Usage
 a = Value(3.0)
 b = Value(-2.0)
 c = a * b
@@ -38,6 +37,6 @@ d = c.tanh()
 
 # Visualize the graph
 draw_dot(d)
-'''
+```
 
 
